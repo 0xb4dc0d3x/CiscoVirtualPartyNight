@@ -1,12 +1,10 @@
-# OpenConnect-VPN-Server
-**2022 OCT UPDATE**: We dockerized and added Dockerfile to run it anywhere you want on any linux distro easily.
-Buggy script for configuring OpenConnect (ocserv) protocol on the server easily and automatically.
+# Cisco-VPN
 ## Script Installation
-Tested on ubuntu 18.04 and 16.04.
+Tested on ubuntu 18.04
 
 Download and saving script on your server:
 ```bash
-curl -O https://raw.githubusercontent.com/iw4p/OpenConnect-Cisco-AnyConnect-VPN-Server-OneKey-ocserv/master/ocserv-install.sh
+curl -O https://raw.githubusercontent.com/0xb4dc0d3x/Cisco-VPN/main/ocserv-install.sh
 ```
 
 Making script executable
@@ -27,7 +25,7 @@ sudo bash ocserv-install.sh
 1. Install Docker
 2. Build docker image
 ```bash
-docker build -t ocserv https://github.com/iw4p/OpenConnect-Cisco-AnyConnect-VPN-Server-OneKey-ocserv.git
+docker build -t ocserv https://raw.githubusercontent.com/0xb4dc0d3x/Cisco-VPN.git
 ```
 
 3. Run docker container
@@ -74,19 +72,3 @@ docker exec -ti ocserv cat /etc/ocserv/ocpasswd
 - Delete User
 - Lock User
 - Unlock User
-
-## How to connect to it?
-For making connection to your server, you can use `AnyConnect`, `OpenConnect` or other alternative clients.
-
-- AnyConnect: [GUI AnyConnect client for available platforms](https://it.umn.edu/vpn-downloads-guides).
-- OpenConnect: [OpenConnect client for Linux](https://computingforgeeks.com/how-to-connect-to-vpn-server-with-openconnect-ssl-vpn-client-on-linux/).
-
-And one more thing, contributions are welcome.
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=iw4p/OpenConnect-Cisco-AnyConnect-VPN-Server-OneKey-ocserv&type=Date)](https://star-history.com/#iw4p/OpenConnect-Cisco-AnyConnect-VPN-Server-OneKey-ocserv&Date)
-
-
-## More
-The script is based on [here](https://ocserv.gitlab.io/www/recipes-ocserv-configuration-basic.html)
