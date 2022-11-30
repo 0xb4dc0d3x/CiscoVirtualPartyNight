@@ -25,7 +25,7 @@ sudo bash ocserv-install.sh
 1. Install Docker
 2. Build docker image
 ```bash
-docker build -t ocserv https://raw.githubusercontent.com/0xb4dc0d3x/Cisco-VPN.git
+docker build -t ocserv https://github.com/0xb4dc0d3x/Cisco-VPN.git
 ```
 
 3. Run docker container
