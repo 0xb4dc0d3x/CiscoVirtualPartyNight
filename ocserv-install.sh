@@ -58,6 +58,7 @@ sed -i -e 's@server-key = /etc/ssl/private/ssl-cert-snakeoil.key@server-key = /e
 echo "Enter a username:"
 read username
 
+
 ocpasswd -c /etc/ocserv/ocpasswd $username
 iptables -t nat -A POSTROUTING -j MASQUERADE
 sed -i -e 's@#net.ipv4.ip_forward=@net.ipv4.ip_forward=@g' /etc/sysctl.conf
