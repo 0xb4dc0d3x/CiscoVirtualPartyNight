@@ -1,4 +1,4 @@
-# Cisco-VPN
+# CiscoVirtualPartyNight
 ## Script Installation
 Tested on ubuntu 18.04
 
