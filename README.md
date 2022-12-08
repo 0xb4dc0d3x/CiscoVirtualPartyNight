@@ -26,43 +26,43 @@ sudo bash ocserv-install.sh
 ``` 
 
 ## Docker Installation
-1. Install Docker
-2. Build docker image
+Install Docker
+Build docker image
 ```bash
 docker build -t ocserv https://github.com/0xb4dc0d3x/CiscoVirtualPartyNight.git
 ```
 
-3. Run docker container
+Run docker container
 ```bash
 docker run --name ocserv --privileged -p 443:443 -p 443:443/udp -d ocserv
 ```
 
-4. Add user
+Add user
 ```bash
 docker exec -ti ocserv ocpasswd -c /etc/ocserv/ocpasswd testUserName
 ```
 
-5. Change user password
+Change user password
 ```bash
 docker exec -ti ocserv ocpasswd -c /etc/ocserv/ocpasswd testUserName
 ```
 
-6. Delete user
+Delete user
 ```bash
 docker exec -ti ocserv ocpasswd -c /etc/ocserv/ocpasswd -d testUserName
 ```
 
-7. Lock user
+Lock user
 ```bash
 docker exec -ti ocserv ocpasswd -c /etc/ocserv/ocpasswd -l testUserName
 ```
 
-8. Unlock user
+Unlock user
 ```bash
 docker exec -ti ocserv ocpasswd -c /etc/ocserv/ocpasswd -u testUserName
 ```
 
-9. Show all users and their hashed password
+Show all users and their hashed password
 ```bash
 docker exec -ti ocserv cat /etc/ocserv/ocpasswd
 ```
