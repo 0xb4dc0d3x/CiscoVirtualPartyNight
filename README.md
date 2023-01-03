@@ -4,7 +4,7 @@
 [فارسی](./READMEFA.md) [English](./README.md)
 
 ## Script Installation
-Tested on ubuntu 18.04
+Tested on ubuntu 18.04 and 20.04
 
 Download and saving script on your server:
 ```bash
