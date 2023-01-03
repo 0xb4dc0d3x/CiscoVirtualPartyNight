@@ -1,8 +1,5 @@
 # CiscoVirtualPartyNight
 
-
-[فارسی](./READMEFA.md) [English](./README.md)
-
 ## Script Installation
 Tested on ubuntu 18.04 and 20.04
 
