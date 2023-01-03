@@ -27,10 +27,56 @@ sudo bash ocserv-install.sh
 
 ## Docker Installation
 Install Docker
+
 Build docker image
 ```bash
 docker build -t ocserv https://github.com/0xb4dc0d3x/CiscoVirtualPartyNight.git
 ```
+
+
+------------
+
+<details>
+<summary>if command gives you an error go with these steps</summary>
+
+
+<details>
+<summary>Step 1</summary>
+
+```bash
+  git clone https://github.com/0xb4dc0d3x/CiscoVirtualPartyNight.git
+```
+  
+<details>
+<summary>Step 2</summary>
+  
+```bash
+  cd CiscoVirtualPartyNight
+```  
+  
+<details>
+<summary>Part 3</summary>
+  
+```bash
+  docker build -t "cisco:Dockerfile" .
+```
+  
+<details>
+<summary>Part 4</summary>
+  
+```bash
+  docker run --name cisco --privileged -p 443:443 -p 443:443/udp -d cisco:Dockerfile
+```  
+</details>
+</details>
+</details>
+</details>
+</details>
+
+**now add user and connect**
+
+------------
+
 
 Run docker container
 ```bash
