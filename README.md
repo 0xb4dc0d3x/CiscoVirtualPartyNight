@@ -1,7 +1,7 @@
 # CiscoVirtualPartyNight
 
 ## Script Installation
-Tested on ubuntu 18.04 and 20.04
+Tested on ubuntu 16.04, 18.04 and 20.04
 
 Download and saving script on your server:
 ```bash
