@@ -27,7 +27,7 @@ Install Docker
 
 Build docker image
 ```bash
-docker build -t ocserv https://github.com/0xb4dc0d3x/CiscoVirtualPartyNight.git
+docker build -t cisco https://github.com/0xb4dc0d3x/CiscoVirtualPartyNight.git
 ```
 
 
@@ -83,37 +83,37 @@ docker exec -ti cisco ocpasswd -c /etc/ocserv/ocpasswd testUserName
 
 Run docker container
 ```bash
-docker run --name ocserv --privileged -p 443:443 -p 443:443/udp -d ocserv
+docker run --name cisco --privileged -p 443:443 -p 443:443/udp -d ocserv
 ```
 
 Add user
 ```bash
-docker exec -ti ocserv ocpasswd -c /etc/ocserv/ocpasswd testUserName
+docker exec -ti cisco ocpasswd -c /etc/ocserv/ocpasswd testUserName
 ```
 
 Change user password
 ```bash
-docker exec -ti ocserv ocpasswd -c /etc/ocserv/ocpasswd testUserName
+docker exec -ti cisco ocpasswd -c /etc/ocserv/ocpasswd testUserName
 ```
 
 Delete user
 ```bash
-docker exec -ti ocserv ocpasswd -c /etc/ocserv/ocpasswd -d testUserName
+docker exec -ti cisco ocpasswd -c /etc/ocserv/ocpasswd -d testUserName
 ```
 
 Lock user
 ```bash
-docker exec -ti ocserv ocpasswd -c /etc/ocserv/ocpasswd -l testUserName
+docker exec -ti cisco ocpasswd -c /etc/ocserv/ocpasswd -l testUserName
 ```
 
 Unlock user
 ```bash
-docker exec -ti ocserv ocpasswd -c /etc/ocserv/ocpasswd -u testUserName
+docker exec -ti cisco ocpasswd -c /etc/ocserv/ocpasswd -u testUserName
 ```
 
 Show all users and their hashed password
 ```bash
-docker exec -ti ocserv cat /etc/ocserv/ocpasswd
+docker exec -ti cisco cat /etc/ocserv/ocpasswd
 ```
 
 ## Features
